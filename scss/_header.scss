@@ -1,0 +1,32 @@
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 30px 170px;
+    background-color: rgb(168, 149, 252);
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Bubblegum Sans', cursive;
+        }
+        .lista{
+            display: flex;
+            li{
+                margin-right: 30px;
+                a{
+                    font-size: 110%;
+                    font-family: 'Bubblegum Sans', cursive; 
+                    color: rgb(255, 255, 255);
+                    grid-area: "lis";
+                }
+            }
+        }
+    }     
+     
+}

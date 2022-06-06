@@ -1,0 +1,54 @@
+.section2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "main2 main2"
+    "main2 main2";
+    grid-gap: 1.5rem; 
+    align-items: center;
+    grid-area: "main2";
+    .section3-text{
+        h3{
+            color: #fa8e00;
+            font-size: 40px;
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            font-size: 1.5rem;
+            margin: 0.8rem 2rem 1.8rem;
+            line-height: 1.3;
+            color: #fff;
+            font-family:'Poppins', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .section3-img{
+        img{
+            width: 60%;
+            margin: 0 20%;
+        }
+    }
+    .section4-text{
+        h4{
+            color: #fa8e00;
+            font-size: 40px;
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        p{
+           font-size: 1.5rem;
+           margin: 0.8rem 6rem 1.8rem;
+           line-height: 1.3;
+           color: #fff;
+           font-family:'Poppins', sans-serif;
+           display: flex;
+           flex-wrap: wrap;
+        }
+    }
+}

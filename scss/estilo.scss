@@ -1,0 +1,18 @@
+@import "header";
+@import "inicio-main";
+@import "inicio-main2";
+@import "footer";
+
+$colorpag:rgb(168, 149, 252);
+$colorh2:#fa8e00;
+
+body{
+    background-color: rgb(168, 149, 252);
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    padding: 70px 5%;
+}

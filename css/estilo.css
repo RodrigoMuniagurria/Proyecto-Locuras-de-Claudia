@@ -210,12 +210,6 @@ section{
 
 /* Cuarta foto de Presentacion */
 
-.section3{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-
 .section4-text h4{
     color: #fa8e00;
     font-size: 40px;
@@ -292,12 +286,6 @@ section{
     border-radius: .2em;
     cursor: pointer;
     font-weight: 400;
-}
-
-@media (max-width:450px){
-    .form{
-        padding: 3.5em 1em;
-    }
 }
 
 /* Footer */
