@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Montserrat:wght@300;400;700&family=Open+Sans&family=Orelega+One&display=swap");
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 30px 170px;
+  background-color: #a895fc;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+header nav .lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .lista li {
+  margin-right: 30px;
+}
+
+header nav .lista li a {
+  font-size: 110%;
+  font-family: 'Bubblegum Sans', cursive;
+  color: white;
+  grid-area: "lis";
+}
+
+.presentacion {
+  width: 100%;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "main main"
+ "main main";
+  grid-gap: 1.5rem;
+  grid-area: "main";
+}
+
+.presentacion .presentacion_text h2 {
+  font-size: 40px;
+  font-family: 'Bubblegum Sans', cursive;
+  color: #fa8e00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px;
+  margin: 2rem;
+}
+
+.presentacion .presentacion_text p {
+  font-size: 1.5rem;
+  margin: 0.8rem 2rem 1.8rem;
+  line-height: 1.3;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.presentacion .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px;
+  padding: 4em;
+}
+
+.presentacion .contenedor img {
+  width: 400px;
+}
+
+.presentacion .section2-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px;
+  padding: 30px;
+}
+
+.presentacion .section2-foto img {
+  width: 400px;
+}
+
+.presentacion .section2-text {
+  font-size: 1.5rem;
+  margin: 0.8rem 2rem 1.8rem;
+  line-height: 1.3;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.presentacion .section2-text h2 {
+  color: #fa8e00;
+  font-size: 40px;
+  padding: 25px;
+}
+
+.section2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "main2 main2"
+ "main2 main2";
+  grid-gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: "main2";
+}
+
+.section2 .section3-text h3 {
+  color: #fa8e00;
+  font-size: 40px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2 .section3-text p {
+  font-size: 1.5rem;
+  margin: 0.8rem 2rem 1.8rem;
+  line-height: 1.3;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2 .section3-img img {
+  width: 60%;
+  margin: 0 20%;
+}
+
+.section2 .section4-text h4 {
+  color: #fa8e00;
+  font-size: 40px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2 .section4-text p {
+  font-size: 1.5rem;
+  margin: 0.8rem 6rem 1.8rem;
+  line-height: 1.3;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer {
+  padding: 30px 170px;
+  width: 100%;
+}
+
+footer .footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[];
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "footer footer footer";
+  grid-area: "footer";
+}
+
+footer .footer-grid .contactanos h4 a {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Bubblegum Sans', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-grid .contactanos .logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+footer .footer-grid .contactanos .logo-footer img {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 8px 12px #fad9f6;
+          box-shadow: 5px 8px 12px #fad9f6;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+footer .footer-grid .contactanos .logo-footer img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer .footer-grid .footer1 h4 {
+  font-size: 20px;
+  font-family: 'Bubblegum Sans', cursive;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+footer .footer-grid .footer1 .lista-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-grid .footer1 .lista-footer li {
+  padding: 2px;
+}
+
+footer .footer-grid .footer1 .lista-footer li a {
+  color: #fff;
+}
+
+footer .footer-grid .redes-sociales h4 {
+  color: #fdfdfd;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-grid .redes-sociales .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+footer .footer-grid .redes-sociales .social-media img {
+  margin: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #a895fc;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  padding: 70px 5%;
+}
+/*# sourceMappingURL=estilo.css.map */

@@ -16,9 +16,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     
 }
-h1{
-    color: white;
-}
+
 /* Navegación*/
 
 header{
@@ -101,6 +99,10 @@ section{
   padding: 4em;
 }
 
+.contenedor img{
+    width: 400px;
+}
+
 .presentacion_text h2{
     font-size: 40px;
     font-family:'Bubblegum Sans', cursive; 
@@ -157,6 +159,10 @@ section{
   justify-content: center;
   margin: 0 20px;
   padding: 30px;
+}
+
+.section2-foto img{
+    width: 400px;
 }
 
 

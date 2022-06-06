@@ -40,6 +40,9 @@
        justify-content: center;
        margin: 0 20px;
        padding: 4em;
+       img{
+         width: 400px;
+       }
     }
 
        .section2-foto{
@@ -48,12 +51,20 @@
        justify-content: center;
        margin: 0 20px;
        padding: 30px;
+       img{
+         width: 400px;
+       }
     }
 
        .section2-text{
-       color: #fa8e00;
-       font-size: 40px;
-       padding: 25px;
+         font-size: 1.5rem;
+         margin: 0.8rem 2rem 1.8rem;
+         line-height: 1.3;
+         color: #fff;
+         font-family:'Poppins', sans-serif;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
        h2{
          color: #fa8e00;
          font-size: 40px;
