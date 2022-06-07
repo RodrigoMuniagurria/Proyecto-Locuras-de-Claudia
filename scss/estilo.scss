@@ -17,7 +17,7 @@ $colorh2:#fa8e00;
 }
 
 body{
-    background-color: rgb(168, 149, 252);
+    background-color: $colorpag;
     min-height: 100vh;
     width: 100%;
     font-family: 'Open Sans', sans-serif;

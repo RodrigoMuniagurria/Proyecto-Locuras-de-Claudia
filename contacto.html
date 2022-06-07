@@ -8,115 +8,141 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Bazar y Tienda</a>
-            <ul class="lista">
-                <li> <a href="index.html">Inico</a> </li>
-                <li> <a href="productos.html">Productos</a> </li>
-                <li> <a href="preguntas_Frecuentes.html">Preguntas Frecuentes</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-----Primera Parte ----->
-
-    <hr>
-    <main class="contacto">
-        <div class="contacto_2">
-            <br>
-            <h2 class="wow animate__animated animate__fadeInDown">
-                ¡Contactános!
-            </h2>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="./index.html">Bazar y Tienda</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
+              <a class="nav-link text-light" href="./productos.html">Productos</a>
+              <a class="nav-link text-light" href="./preguntas_Frecuentes.html">Preguntas Frecuentes</a>
+              <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+            </div>
+          </div>
         </div>
-        <section class="contacto-grid">
-            <div class="imagen-contacto">
-            <img src="./fotos/flecha-correcta.png" alt="informacion" class="wow animate__animated animate__fadeInLeftBig" width="130px">
+      </nav>
+    <!-----Primera Parte ----->
+    <main class="bootstrap">
+        <section>
+        <div class="container">
+            <div class="row">
+             <div class="col-sm-10 p-5 text-center wow animate__animated animate__backInDown ">
+                <label for="customRange1" class="form-label text-light">Nos importa tu opinión</label>
+                <input type="range" class="form-range" id="customRange1">
             </div>
-            <div class="hola">
-            <p class="wow animate__animated animate__bounceInDown">
-                Aqui te podremos ayudar, no olvides que estamos para ayudarte. Puedes consultarnos por aca o por nuestras redes sociales.
-            </p>
-           </div>
-            <div class="imagen-contacto2">
-            <img src="./fotos/information.png" alt="informacion" class="wow animate__animated animate__fadeInRightBig" width="160px"> 
+              <div class="col-sm-2 p-5">
+                <div class="alert alert-info text-center wow animate__animated animate__backInDown" role="alert">
+                    ¡Deja tu feedback!
+                  </div>
+              </div>
+             </div>
+             </div>
+        </section>
+        <section>
+            <div class="container">
+            <div class="row">
+            <div class="col">
+                <form class="row g-3 wow animate__animated animate__lightSpeedInLeft">
+                    <div class="col-md-4">
+                      <label for="validationDefault01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationDefault02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationDefault03" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationDefault04" class="form-label">Estado</label>
+                      <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationDefault05" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Acepta terminos y condiciones
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                  </form>
+             </div>
             </div>
-       </section>
-
+        </div>
+    </section>
+    
       <!-----Segunda Parte---->
-
-        <section class="formulario-contacto">
-        <form class="form animate__animated animate__backInUp">
-            <div class="imagen-formulario">
-            <img src="./fotos/ayuda.png" alt="ayuda" width="50px">
-            </div>
-            <div class="form__container">
-                <h2 class="form__title">Contáctame</h2>
-                <input type="text" class="form__input" placeholder="Nombre:" >
-                <input type="email" class="form__input" placeholder="Email:" >
-                <textarea class="form__input form__input--message" placeholder="Mensaje"></textarea>
-                <div>
-                    <label for="acepta"></label> Acepta terminos y condiciones</label>
-                    <input type="checkbox" name="acepta" value="1">                         
-                </div>
-                <div>
-                    <label for="acepta"></label>Quieres recibir notificaciones de Locuras de Claudia</label>
-                    <input type="checkbox" name="acepta" value="1">
-                </div>
-                 <input type="submit" value="Enviar" class="form__cta">
-            </div>   
-        </form>
+      <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="alert alert-danger text-center wow animate__animated animate__backInDown" role="alert">
+                ¡No le confies tu contraseña a nadie!
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-5 text-center wow animate__animated animate__lightSpeedInLeft">
+            <a href="index.html" class="btn btn-primary">Volver a Inicio</a>
+          </div>
+          <div class="col-7 text-center wow animate__animated animate__lightSpeedInRight">
+            <a href="preguntas_Frecuentes.html" class="btn btn-primary">Volver a la pagina anterior</a>
+          </div>
+        </div>
+      </div>
     </section>
     </main>
 
     <!----Footer---->
 
-    <hr>
-    <footer>
-           <div class="footer-grid">
-            <div class="contactanos">
-                <h4>
-                    <a href="index.html">Bazar y Tienda</a> 
-                </h4>
-                <div class="logo-footer">
-                    <a href="index.html">
-                    <img src="./fotos/logo.png" alt="" width="70px">
-                    </a>
-                </div>
-            </div>
-        <div class="footer1">
-            <h4>
-                Links
-            </h4>
-        <ul class="lista-footer">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="preguntas_Frecuentes.html">Preguntas Frecuentes</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-       </div>
-           <div class="redes-sociales">
-               <h4>
-                   Social Media:
-               </h4>
-            <div class="social-media">
-                <a href="https://es-la.facebook.com/">
-                <img src="./fotos/facebook.png" alt="facebook" width="30xp">
-                </a>
-                <a href="https://www.instagram.com/"> 
-                <img src="./fotos/instagram.png" alt="instagram" width="30px">
-                </a>
-                <a href="https://twitter.com/?lang=es">
-                <img src="./fotos/gorjeo.png" alt="twitter" width="30px">
-                </a>
-           </div>
-      </div>
-      </div>
-    </footer>
+
+
+    
+    <ul class="nav justify-content-center bg-primary">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./preguntas_Frecuentes.html">Preguntas Frecuentes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+          </li>
+      </ul>
 
     <!------Wow---->
 
@@ -124,6 +150,8 @@
     <script>
     new WOW().init();
     </script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 </body>
 </html>

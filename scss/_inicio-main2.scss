@@ -10,7 +10,7 @@
     grid-area: "main2";
     .section3-text{
         h3{
-            color: #fa8e00;
+            color: $colorh2;
             font-size: 40px;
             padding: 25px;
             display: flex;
@@ -35,7 +35,7 @@
     }
     .section4-text{
         h4{
-            color: #fa8e00;
+            color: $colorh2;
             font-size: 40px;
             padding: 25px;
             display: flex;

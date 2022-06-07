@@ -821,6 +821,14 @@ background-color: rgb(168, 149, 252) ;
   padding: 80px;
 }
 
+.bootstrap{
+    background-color: rgb(168, 149, 252) ;
+}
+
+.bootstrap2{
+    background-color: rgb(168, 149, 252);
+}
+
 
 
 
@@ -830,9 +838,12 @@ background-color: rgb(168, 149, 252) ;
 
 @media screen and (max-width: 576px){
 
+    
      header{
          padding: 5px;
+         width: auto;
      }
+     
      .lista li a{
          font-size: 15px;
      }
@@ -1122,7 +1133,7 @@ background-color: rgb(168, 149, 252) ;
         display: flex;
         flex-direction: column;
         padding: 1px 10px;
-        margin: 0px 0px 0px 20px;
+        width: auto;
     }
     .footer-grid{
        grid-template-columns: repeat(3,1fr);
