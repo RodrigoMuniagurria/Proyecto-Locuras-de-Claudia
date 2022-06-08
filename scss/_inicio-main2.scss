@@ -8,9 +8,9 @@
     grid-gap: 1.5rem; 
     align-items: center;
     grid-area: "main2";
-    .section3-text{
+    .div-text{
         h3{
-            color: $colorh2;
+            color:$colorsub;
             font-size: 40px;
             padding: 25px;
             display: flex;
@@ -27,15 +27,15 @@
             justify-content: center;
         }
     }
-    .section3-img{
+    .div-img{
         img{
             width: 60%;
             margin: 0 20%;
         }
     }
-    .section4-text{
+    .div2-text{
         h4{
-            color: $colorh2;
+            color:$colorsub;
             font-size: 40px;
             padding: 25px;
             display: flex;

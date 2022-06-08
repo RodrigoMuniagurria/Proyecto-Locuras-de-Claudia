@@ -10,66 +10,20 @@
 }
 
 body{
-    background-color: rgb(168, 149, 252);
     min-height: 100vh;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     
 }
-
-/* Navegación*/
-
-header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 30px 170px;
-    background-color: rgb(168, 149, 252); 
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.lista{
-    display: flex;
-}
-.lista li{
-    margin-right: 30px;
-}
-.lista li a{
-    font-size: 110%;
-    font-family: 'Bubblegum Sans', cursive; 
-    color: rgb(255, 255, 255);
-    grid-area: "lis";
-}
-
  
-.logo{
-    color: #ffffff;
-    font-size: 30px;
-    font-family: 'Bubblegum Sans', cursive; 
-    
-    
-}
 section{
     padding: 70px 5%;
 }
 
 
-
-.color{
-    color: #fdfdfd;
+main{
+    background-color: rgb(168, 149, 252)
 }
-
-/* Termina Navegación */
-
-
 
 /* Primera Foto presentación */
 
@@ -136,13 +90,13 @@ section{
 
 
 
-.section2-text h2{
+.contenedor3 h2{
     color: #fa8e00;
     font-size: 40px;
     padding: 25px;
 }
 
-.section2-text{
+.contenedor3{
     font-size: 1.5rem;
     margin: 0.8rem 2rem 1.8rem;
     line-height: 1.3;
@@ -153,7 +107,7 @@ section{
     justify-content: center;
 }
 
-.section2-foto{
+.contenedor2{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -161,7 +115,7 @@ section{
   padding: 30px;
 }
 
-.section2-foto img{
+.contenedor2 img{
     width: 400px;
 }
 
@@ -186,12 +140,12 @@ section{
     grid-area: "main2";
 }
 
-.section3-img img{
+.div-img img{
     width: 60%;
     margin: 0 20%;
 }
 
-.section3-text h3{
+.div-text h3{
     color: #fa8e00;
     font-size: 40px;
     padding: 25px;
@@ -199,7 +153,7 @@ section{
     justify-content: center;
 }
 
-.section3-text p{
+.div-text p{
     font-size: 1.5rem;
     margin: 0.8rem 2rem 1.8rem;
     line-height: 1.3;
@@ -216,7 +170,7 @@ section{
 
 /* Cuarta foto de Presentacion */
 
-.section4-text h4{
+.div2-text h4{
     color: #fa8e00;
     font-size: 40px;
     padding: 25px;
@@ -225,7 +179,7 @@ section{
     
 }
 
-.section4-text p{
+.div2-text p{
     font-size: 1.5rem;
     margin: 0.8rem 6rem 1.8rem;
     line-height: 1.3;
@@ -294,95 +248,10 @@ section{
     font-weight: 400;
 }
 
-/* Footer */
-
-footer{
-    padding: 30px 170px;
-    width: 100%;
-}
-  .footer-grid{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-template-areas:
-      "footer footer footer";
-      grid-area: "footer";
-      
-      
-  }
-  .contactanos h4 a{
-      color: #ffffff;
-    font-size: 30px;
-    font-family: 'Bubblegum Sans', cursive; 
-    display: flex;
-    justify-content: center;
-  }
-
-  .logo-footer{
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-  }
-
-  .logo-footer img{
-    border-radius: 10px;
-    box-shadow: 5px 8px 12px rgb(250, 217, 246);
-    transition: transform 2s;
-    
-  }
-   .logo-footer img:hover{
-    transform: scale(1.2);
-   }
-
-
-  .footer1 h4{
-      font-size: 20px;
-      font-family:'Bubblegum Sans', cursive;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      color: #ffffff;
-
-  }
-  
-  .lista-footer{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-      
-  }
-
-  .lista-footer li{
-      padding: 2px;
-  }
-
-  .lista-footer a{
-      color: #fff;
-  }
-
-.redes-sociales h4{
-    color: #fdfdfd;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.social-media{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.social-media img{
-    margin: 3px;
-}
-  
-  
 
 /* Productos */
 
 .productos{    
-background-color: rgb(168, 149, 252) ;
  padding: 50px;
 }
 
@@ -613,7 +482,6 @@ background-color: rgb(168, 149, 252) ;
 /*Preguntas Frecuentes*/
 
 .preguntas{
-    background-color: rgb(168, 149, 252);
     color: #ffffff;
     font-size: 20px;
     font-family: 'Roboto', sans-serif; 
@@ -771,83 +639,12 @@ background-color: rgb(168, 149, 252) ;
 }
 
 
-/* Contacto */
-
-.contacto_2 h2{
-    font-size: 40px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    padding: 77px;
-    text-shadow: 2px 2px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0);
-
-}
-
-.contacto-grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-
-.contacto-grid p{
-    font-size: 29px;
-    font-family: 'Roboto', sans-serif;
-    color: #fdfdfd;
-}
-
-.hola{
-    display: flex;
-    justify-content: center;
-}
-
-.imagen-contacto{
-    display: flex;
-    justify-content: center;
-}
-
-.imagen-contacto2{
-    display: flex;
-    justify-content: center;
-}
-
-
-.imagen-formulario{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.imagen-consulta{
-  display: flex;
-  justify-content: center;
-  padding: 80px;
-}
-
-.bootstrap{
-    background-color: rgb(168, 149, 252) ;
-}
-
-.bootstrap2{
-    background-color: rgb(168, 149, 252);
-}
-
-
-
-
 
 /* Responsive */
 
 
 @media screen and (max-width: 576px){
 
-    
-     header{
-         padding: 5px;
-         width: auto;
-     }
-     
-     .lista li a{
-         font-size: 15px;
-     }
-         
      
 
     .presentacion{
@@ -880,46 +677,43 @@ background-color: rgb(168, 149, 252) ;
         "main2";
      }
       
-     .section2-foto img{
+     .contenedor2 img{
          width: 80%;
      }
 
-     .section2-text h2{
+     .contenedor3 h2{
          font-size: 22px;
      }
 
-     .section2-text p{
+     .contenedor3 p{
          font-size: 15px;
      }
 
-     .section2{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-     }
-
-     .section3-text h3{
+     .div-text h3{
          display: flex;
          justify-content: center;
          font-size: 22px;
      }
 
-     .section3-text p{
+     .div-text p{
          font-size: 15px;
      }
 
-     .section3-img{
+     .div-img{
          width: 100%;
      }
 
-     .section4-img img{
-         width: 8em;
+     .div2-img img{
+         width: 150px;
+         margin-left: 30px;
      }
 
-     .section4-text h4{
+
+     .div2-text h4{
          font-size: 25px;
      }
 
-     .section4-text p{
+     .div2-text p{
          font-size: 15px;
      }
      
@@ -1127,31 +921,6 @@ background-color: rgb(168, 149, 252) ;
        height: 100%;
     }
        
-    /* Footer */
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        padding: 1px 10px;
-        width: auto;
-    }
-    .footer-grid{
-       grid-template-columns: repeat(3,1fr);
-       
-    }
-
-    .contactanos h4 a{
-        font-size: 20px;
-    }
-
-    .footer1{
-        font-size: 12px;
-    }
-
-    .redes-sociales h4{
-        font-size: 20px;
-    }
-
     }
     
 
