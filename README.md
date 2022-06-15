@@ -20,7 +20,7 @@ Keywords: Ventas, Tiendas, Tienda online, Bazar, Cocina, Hogar, Canastos, Cestos
 
 Preguntas Frecuentes
 
-Título:Bazar y Tienda - Preguntas Frecuentes
+Título: Bazar y Tienda - Preguntas Frecuentes
 
 Description : Aquí puedes observar algunas de las preguntas que siempre nos llegan. Esperamos resolver la tuya.
 
