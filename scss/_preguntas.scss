@@ -1,0 +1,115 @@
+@mixin preguntas{
+    color:$colorsub;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin contenido{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.preguntas{
+    color: $colortit;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif; 
+    h2{
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        padding: 55px;
+        text-shadow: $textshadow;
+    }
+    .preguntas-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "pregunta1 pregunta2"
+        "pregunta3 pregunta4"
+        "pregunta5 pregunta6" ;
+        grid-gap: 2rem;
+        .pregunta1{
+            grid-area: pregunta1;
+            h3{
+                @include preguntas;
+            }
+            p{
+                @include contenido;
+            }
+        .imagen-pregunta1{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 25px;
+        }
+        }
+        .pregunta2{
+            grid-area: pregunta2;
+            h3{
+                @include preguntas;
+            }
+            p{
+                @include contenido;
+            }
+        .imagen-pregunta2{
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+            img{
+                margin: 10px; 
+            }
+        }    
+        }
+        .pregunta3{
+            grid-area: pregunta3;
+            h3{
+                @include preguntas;
+            }
+            p{
+                @include contenido;
+            } 
+        }
+        .imagen-pregunta3{
+            display: flex;
+            justify-content: center;
+            grid-area: pregunta4;
+            img{
+                margin: 10px;
+            }
+        }
+        .pregunta4{
+            grid-area: pregunta5;
+            h3{
+                @include preguntas;
+            }
+            p{
+                @include contenido;
+            }
+        .imagen-pregunta4{
+            display: flex;
+            justify-content: center;
+            padding: 70px;
+        }    
+        }
+        .pregunta5{
+            grid-area: pregunta6;
+            h3{
+                @include preguntas;
+            }
+            p{
+                @include contenido;
+            }
+        .imagen-pregunta5{
+            display: flex;
+            justify-content: center;
+            padding: 50px;  
+            img{
+                margin: 10px;
+            }  
+        }    
+        }
+    }
+}

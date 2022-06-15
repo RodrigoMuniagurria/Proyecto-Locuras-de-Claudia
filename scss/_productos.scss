@@ -1,0 +1,169 @@
+@mixin imagenes{
+    border-radius: 10px;
+    box-shadow: 5px 8px 12px rgb(0, 0, 0);
+    transition: transform 2s;
+}
+
+@mixin movimiento{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin zoom{
+    transform: scale(1.2);
+}
+
+.productos{
+    padding: 50px;
+    h2{
+       color:$colortit;
+       font-size: 50px;
+       font-family:$fonttit; 
+       display: flex;
+       justify-content: center;
+       text-shadow: $textshadow;
+       padding: 50px;
+    }
+    .productos-grid{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-areas: 
+       "prod1 prod2 prod3";
+       .movimiento1{
+           @include movimiento;
+           grid-area: prod1;
+       }
+       .movimiento2{
+           @include movimiento;
+           grid-area: prod2;
+       }
+       .movimiento3{
+           @include movimiento;}
+           grid-area: prod3;
+       }
+    }
+    .productos-grid2{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: repeat(4,1fr);
+       grid-template-areas: 
+       "prod4 prod5 prod6"
+       "prod7 prod8 prod9"
+       "prod10 prod11 prod12"
+       "prod13 prod14 prod15";
+       gap: 5rem;
+       .movimiento4{
+           @include movimiento;
+           grid-area: prod4;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento5{
+           @include movimiento;
+           grid-area: prod5;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento6{
+           @include movimiento;
+           grid-area: prod6;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento7{
+           @include movimiento;
+           grid-area: prod7;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento8{
+           @include movimiento;
+           grid-area: prod8;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento9{
+           @include movimiento;
+           grid-area: prod9;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento10{
+           @include movimiento;
+           grid-area: prod10;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento11{
+           @include movimiento;
+           grid-area: prod11;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento12{
+           @include movimiento;
+           grid-area: prod12;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento13{
+           @include movimiento;
+           grid-area: prod13;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento14{
+           @include movimiento;
+           grid-area: prod14;
+           img{
+               @include imagenes;
+               &:hover{
+                   @include zoom;
+               }
+           }
+       }
+       .movimiento15{
+           @include movimiento;
+           grid-area: prod15;
+       }
+    }

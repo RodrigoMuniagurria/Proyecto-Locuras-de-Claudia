@@ -6,14 +6,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-    "main main"
-    "main main";
+    "main1 main2"
+    "main3 main4";
     grid-gap: 1.5rem;
-    grid-area: "main";
     .presentacion_text{
+      grid-area: main1;
        h2{
         font-size: 40px;
-        font-family:'Bubblegum Sans', cursive; 
+        font-family:$fonttit; 
         color:$colorsub;
         display: flex;
         flex-wrap: wrap;
@@ -40,6 +40,7 @@
        justify-content: center;
        margin: 0 20px;
        padding: 4em;
+       grid-area: main2;
        img{
          width: 400px;
        }
@@ -51,6 +52,7 @@
        justify-content: center;
        margin: 0 20px;
        padding: 30px;
+       grid-area: main3;
        img{
          width: 400px;
        }
@@ -60,13 +62,15 @@
          font-size: 1.5rem;
          margin: 0.8rem 2rem 1.8rem;
          line-height: 1.3;
-         color: #fff;
+         color: $colortit;
          font-family:'Poppins', sans-serif;
          display: flex;
          flex-wrap: wrap;
          justify-content: center;
+         grid-area: main4;
        h2{
          color: $colorsub;
+         font-family:$fonttit;
          font-size: 40px;
          padding: 25px;
        }

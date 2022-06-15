@@ -3,14 +3,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-    "main2 main2"
-    "main2 main2";
+    "main5 main6"
+    "main7 main8";
     grid-gap: 1.5rem; 
     align-items: center;
     grid-area: "main2";
     .div-text{
+        grid-area: main5;
         h3{
             color:$colorsub;
+            font-family:$fonttit;
             font-size: 40px;
             padding: 25px;
             display: flex;
@@ -28,14 +30,20 @@
         }
     }
     .div-img{
+        grid-area: main6;
         img{
             width: 60%;
             margin: 0 20%;
         }
     }
+    .div2-img{
+        grid-area: main7;
+    }
     .div2-text{
+        grid-area: main8;
         h4{
             color:$colorsub;
+            font-family:$fonttit;
             font-size: 40px;
             padding: 25px;
             display: flex;
@@ -45,7 +53,7 @@
            font-size: 1.5rem;
            margin: 0.8rem 6rem 1.8rem;
            line-height: 1.3;
-           color: #fff;
+           color: $colortit;
            font-family:'Poppins', sans-serif;
            display: flex;
            flex-wrap: wrap;

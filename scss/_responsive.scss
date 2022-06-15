@@ -1,0 +1,279 @@
+@mixin fila{
+    width: 80%;
+    height: 100%;
+}
+
+@mixin fila2{
+    width: 90%;
+    height: 50%;
+}
+
+@media screen and (max-width: 576px){
+
+    main{
+        background-color:$colorpag;
+    }
+
+    .presentacion{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "main1"
+        "main2"
+        "main4"
+        "main3";
+        .presentacion_text{
+            h2{
+                font-size: 22px;
+                font-family:$fonttit;
+            }
+            p{
+                font-size: 15px;
+            }
+         }
+        .contenedor{
+            img{
+                width: 80%;
+            }
+        } 
+        .contenedor2{
+            img{
+                width: 80%;
+            }
+        }
+        .contenedor3{
+            h2{
+                font-size: 22px;
+                font-family:$fonttit;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    
+      }
+         .section2{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "main5"
+            "main6"
+            "main8"
+            "main7";
+            .div-text{
+                h3{
+                  display: flex;
+                  justify-content: center;
+                  font-size: 22px;
+                  font-family:$fonttit;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+             .div-img{
+                width: 100%;
+            }
+             .div2-img{
+                 img{
+                    width: 150px;
+                    margin-left: 30px;
+                 }
+            }
+             .div2-text{
+                 h4{
+                    font-size: 25px;
+                    font-family:$fonttit;
+                }
+                 p{
+                    font-size: 15px;
+                }
+            }
+         }
+
+         .productos{
+            h2{
+                font-size: 25px;
+            }
+            .productos-grid{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                "prod1 prod2 prod3";  
+            }
+            .movimiento1{
+                img{
+                    @include fila;
+                }   
+            }
+            .movimiento2{
+                img{
+                    @include fila;
+                }
+            }
+            .movimiento3{
+                img{
+                    @include fila;
+                }
+            }
+            .productos-grid2{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(6fr, 1fr);
+                grid-template-areas:
+                "prod4 prod5"
+                "prod6 prod7"
+                "prod8 prod9"
+                "prod10 prod11"
+                "prod12 prod13"
+                "prod14 prod15";
+                .movimiento4{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento5{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento6{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento7{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento8{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento9{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento10{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento11{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento12{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento13{
+                    img{
+                        @include fila2;
+                    }
+                }
+                .movimiento14{
+                    img{
+                        width: 90%;
+                        height: 80%;
+                    }
+                }
+                .movimiento15{
+                    img{
+                        width: 90%;
+                        height: 80%;
+                    }
+                }
+    
+            }
+        } 
+
+         .preguntas{
+            h2{
+                font-size: 25px;
+            }
+            .preguntas-grid{
+                grid-template-columns: auto;
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-areas:
+                "pregunta1"
+                "pregunta2"
+                "pregunta3"
+                "pregunta4"
+                "pregunta5"
+                "pregunta6" ;
+                 grid-gap: 2rem;
+                 .pregunta1{
+                    h3{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    .imagen-pregunta1{
+                        img{
+                            width: 25%;
+                        }
+                    }
+
+                 }
+                 .pregunta2{
+                    h3{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    .imagen-pregunta2{
+                        img{
+                            width: 25%;
+                        }
+                    }
+                 }
+                 .pregunta3{
+                    h3{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                 }
+                 .imagen-pregunta3{
+                    img{
+                        width: 50%;
+                        height: 50%;
+                    }
+                 }
+                 .pregunta4{
+                    h3{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    .imagen-pregunta4{
+                        img{
+                            width: 60%;
+                        }
+                    }
+                 }
+                 .pregunta5{
+                    h3{
+                        font-size: 20px;
+                        margin: 20px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                 }
+            }
+        
+        }
+        .form{
+            width: 100%;
+            height: 100%;
+        }
+    }
