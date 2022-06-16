@@ -55,7 +55,9 @@
                 @include contenido;
             }
         .imagen-pregunta2{
-            @extend .imagen-pregunta1;
+            display: flex;
+            justify-content: center;
+            padding: 25px;
             img{
                 margin: 10px; 
             }
