@@ -40,11 +40,11 @@
             p{
                 @include contenido;
             }
+        }
         .imagen-pregunta1{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             padding: 25px;
-        }
         }
         .pregunta2{
             grid-area: pregunta2;
@@ -55,9 +55,7 @@
                 @include contenido;
             }
         .imagen-pregunta2{
-            display: flex;
-            justify-content: center;
-            padding: 25px;
+            @extend .imagen-pregunta1;
             img{
                 margin: 10px; 
             }
