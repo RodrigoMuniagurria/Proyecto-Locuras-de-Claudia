@@ -38,8 +38,9 @@
            grid-area: prod2;
        }
        .movimiento3{
-           @include movimiento;}
+           @include movimiento;
            grid-area: prod3;
+       }
        }
     }
     .productos-grid2{

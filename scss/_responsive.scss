@@ -94,6 +94,7 @@
          .productos{
             h2{
                 font-size: 25px;
+                font-family:$fonttit;
             }
             .productos-grid{
                 grid-template-columns: repeat(3, 1fr);
@@ -194,6 +195,7 @@
          .preguntas{
             h2{
                 font-size: 25px;
+                font-family:$fonttit;
             }
             .preguntas-grid{
                 grid-template-columns: auto;
@@ -208,10 +210,11 @@
                  grid-gap: 2rem;
                  .pregunta1{
                     h3{
-                        font-size: 25px;
+                        font-size: 22px;
+                        font-family:$fonttit;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                     .imagen-pregunta1{
                         img{
@@ -222,10 +225,11 @@
                  }
                  .pregunta2{
                     h3{
-                        font-size: 25px;
+                        font-size: 22px;
+                        font-family:$fonttit;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                     .imagen-pregunta2{
                         img{
@@ -235,24 +239,25 @@
                  }
                  .pregunta3{
                     h3{
-                        font-size: 25px;
+                        font-size: 22px;
+                        font-family:$fonttit;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                  }
                  .imagen-pregunta3{
                     img{
-                        width: 50%;
-                        height: 50%;
+                        width: 55%;
                     }
                  }
                  .pregunta4{
                     h3{
-                        font-size: 25px;
+                        font-size: 22px;
+                        font-family:$fonttit;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                     .imagen-pregunta4{
                         img{
@@ -262,11 +267,12 @@
                  }
                  .pregunta5{
                     h3{
-                        font-size: 20px;
+                        font-size: 22px;
                         margin: 20px;
+                        font-family:$fonttit;
                     }
                     p{
-                        font-size: 17px;
+                        font-size: 15px;
                     }
                  }
             }

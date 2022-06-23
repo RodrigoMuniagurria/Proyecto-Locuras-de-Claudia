@@ -126,8 +126,7 @@
   .productos .productos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "prod1 prod2 prod3";
-    grid-area: prod3; }
+    grid-template-areas: "prod1 prod2 prod3"; }
     .productos .productos-grid .movimiento1 {
       display: flex;
       justify-content: center;
@@ -138,7 +137,8 @@
       grid-area: prod2; }
     .productos .productos-grid .movimiento3 {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      grid-area: prod3; }
 
 .productos-grid2 {
   display: grid;
@@ -281,10 +281,11 @@
       grid-area: pregunta1; }
       .preguntas .preguntas-grid .pregunta1 h3 {
         color: #fa8e00;
-        font-size: 30px;
+        font-size: 35px;
         font-family: 'Rubik', sans-serif;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        padding: 25px; }
       .preguntas .preguntas-grid .pregunta1 p {
         font-size: 20px;
         display: flex;
@@ -297,10 +298,11 @@
       grid-area: pregunta2; }
       .preguntas .preguntas-grid .pregunta2 h3 {
         color: #fa8e00;
-        font-size: 30px;
+        font-size: 35px;
         font-family: 'Rubik', sans-serif;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        padding: 15px; }
       .preguntas .preguntas-grid .pregunta2 p {
         font-size: 20px;
         display: flex;
@@ -311,10 +313,11 @@
       grid-area: pregunta3; }
       .preguntas .preguntas-grid .pregunta3 h3 {
         color: #fa8e00;
-        font-size: 30px;
+        font-size: 35px;
         font-family: 'Rubik', sans-serif;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        padding: 15px; }
       .preguntas .preguntas-grid .pregunta3 p {
         font-size: 20px;
         display: flex;
@@ -329,10 +332,11 @@
       grid-area: pregunta5; }
       .preguntas .preguntas-grid .pregunta4 h3 {
         color: #fa8e00;
-        font-size: 30px;
+        font-size: 35px;
         font-family: 'Rubik', sans-serif;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        padding: 15px; }
       .preguntas .preguntas-grid .pregunta4 p {
         font-size: 20px;
         display: flex;
@@ -345,10 +349,11 @@
       grid-area: pregunta6; }
       .preguntas .preguntas-grid .pregunta5 h3 {
         color: #fa8e00;
-        font-size: 30px;
+        font-size: 35px;
         font-family: 'Rubik', sans-serif;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        padding: 15px; }
       .preguntas .preguntas-grid .pregunta5 p {
         font-size: 20px;
         display: flex;
@@ -443,7 +448,8 @@
     .section2 .div2-text p {
       font-size: 15px; }
   .productos h2 {
-    font-size: 25px; }
+    font-size: 25px;
+    font-family: "Bubblegum Sans", cursive; }
   .productos .productos-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "prod1 prod2 prod3"; }
@@ -497,42 +503,47 @@
       width: 90%;
       height: 80%; }
   .preguntas h2 {
-    font-size: 25px; }
+    font-size: 25px;
+    font-family: "Bubblegum Sans", cursive; }
   .preguntas .preguntas-grid {
     grid-template-columns: auto;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "pregunta1" "pregunta2" "pregunta3" "pregunta4" "pregunta5" "pregunta6";
     grid-gap: 2rem; }
     .preguntas .preguntas-grid .pregunta1 h3 {
-      font-size: 25px; }
+      font-size: 22px;
+      font-family: "Bubblegum Sans", cursive; }
     .preguntas .preguntas-grid .pregunta1 p {
-      font-size: 20px; }
+      font-size: 15px; }
     .preguntas .preguntas-grid .pregunta1 .imagen-pregunta1 img, .preguntas .preguntas-grid .pregunta1 .pregunta2 .imagen-pregunta2 img, .preguntas .preguntas-grid .pregunta2 .pregunta1 .imagen-pregunta2 img {
       width: 25%; }
     .preguntas .preguntas-grid .pregunta2 h3 {
-      font-size: 25px; }
+      font-size: 22px;
+      font-family: "Bubblegum Sans", cursive; }
     .preguntas .preguntas-grid .pregunta2 p {
-      font-size: 20px; }
+      font-size: 15px; }
     .preguntas .preguntas-grid .pregunta2 .imagen-pregunta2 img {
       width: 25%; }
     .preguntas .preguntas-grid .pregunta3 h3 {
-      font-size: 25px; }
+      font-size: 22px;
+      font-family: "Bubblegum Sans", cursive; }
     .preguntas .preguntas-grid .pregunta3 p {
-      font-size: 20px; }
+      font-size: 15px; }
     .preguntas .preguntas-grid .imagen-pregunta3 img {
-      width: 50%;
-      height: 50%; }
+      width: 55%; }
     .preguntas .preguntas-grid .pregunta4 h3 {
-      font-size: 25px; }
+      font-size: 22px;
+      font-family: "Bubblegum Sans", cursive; }
     .preguntas .preguntas-grid .pregunta4 p {
-      font-size: 20px; }
+      font-size: 15px; }
     .preguntas .preguntas-grid .pregunta4 .imagen-pregunta4 img {
       width: 60%; }
     .preguntas .preguntas-grid .pregunta5 h3 {
-      font-size: 20px;
-      margin: 20px; }
+      font-size: 22px;
+      margin: 20px;
+      font-family: "Bubblegum Sans", cursive; }
     .preguntas .preguntas-grid .pregunta5 p {
-      font-size: 17px; }
+      font-size: 15px; }
   .form {
     width: 100%;
     height: 100%; } }
