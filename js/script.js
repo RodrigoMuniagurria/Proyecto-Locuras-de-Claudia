@@ -12,7 +12,7 @@ let precioProductoC = 250
 let stockProductoC = 15
 
 
-let compras = prompt("Por Favor, Eliga entre estos dos productos que tenemos en este momento: \n- Termo\n- Almhoada\n- Tapers")
+let compras = parseInt(prompt("Por Favor, Eliga entre estos tres productos que tenemos en este momento: \n- 1\n- 2\n- 3"))
 let precioFinal = 0;
 
 
