@@ -11,6 +11,21 @@ let nombreProductoC = "Tapers"
 let precioProductoC = 250
 let stockProductoC = 15
 
+let nombreProductoD = "Mochila"
+let precioProductoD = 500
+let stockProductoD = 20
+
+let nombreProductoE = "Paragua"
+let precioProductoE = 300
+let stockProductoE  = 7
+
+let nombreProductoF = "Pantalones"
+let precioProductoF = 1000
+let stockProductoF  = 30
+
+let nombreProductoG = "Caja"
+let precioProductoG = 900
+let stockProductoG  = 7
 
 let compras = parseInt(prompt("Por Favor, Eliga entre estos tres productos que tenemos en este momento: \n- 1\n- 2\n- 3"))
 let precioFinal = 0;
@@ -56,3 +71,22 @@ for(let i = 0; i < compras; i++){
 function precio (cantidad, valor){
     precioFinal += cantidad * valor
 }
+
+let productos = [nombreProductoA, nombreProductoB, nombreProductoC];
+
+productos.push(nombreProductoD, nombreProductoE);
+
+let agregarProductos = [nombreProductoF, nombreProductoG];
+
+const listadoProductos = productos.concat(agregarProductos);
+
+console.log(listadoProductos);
+
+
+
+
+
+
+
+
+    
