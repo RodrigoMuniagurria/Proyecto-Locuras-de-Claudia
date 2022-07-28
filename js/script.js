@@ -1,86 +1,82 @@
 
-let nombreProductoA = "Termo"
-let precioProductoA = 150
-let stockProductoA = 5
+function Productos(nombre, precio, stock){
+    this.nombre = nombre
+    this.precio = precio
+    this.stock = stock
+}
 
-let nombreProductoB = "Almhoada"
-let precioProductoB = 300
-let stockProductoB = 10
+const productoA = new Productos("Termo", 150, 5)
+const productoB = new Productos("Almohada", 300, 10)
+const productoC = new Productos("Tapers", 250, 15)
+const productoD = new Productos("Mochila", 500, 20)
+const productoE = new Productos("Paragua", 300, 7)
+const productoF = new Productos("Pantalones", 1000, 30)
+const productoG = new Productos("Caja", 900, 7)
 
-let nombreProductoC = "Tapers"
-let precioProductoC = 250
-let stockProductoC = 15
-
-let nombreProductoD = "Mochila"
-let precioProductoD = 500
-let stockProductoD = 20
-
-let nombreProductoE = "Paragua"
-let precioProductoE = 300
-let stockProductoE  = 7
-
-let nombreProductoF = "Pantalones"
-let precioProductoF = 1000
-let stockProductoF  = 30
-
-let nombreProductoG = "Caja"
-let precioProductoG = 900
-let stockProductoG  = 7
 
 let compras = parseInt(prompt("Por Favor, Eliga entre estos tres productos que tenemos en este momento: \n- 1\n- 2\n- 3"))
 let precioFinal = 0;
 
 
-for(let i = 0; i < compras; i++){
+while(compras == 1){
 
-    let producto1 = prompt("¿Cual es el nombre del producto que quieras comprar? : \n- Termo\n- Almhoada\n- Tapers")
+    let producto1 = prompt("¿Cual es el nombre del producto que quieras comprar? : \n- Termo\n- Almohada\n- Tapers")
     let cantidad1 = prompt("Por Favor, Indique la cantidad del producto que desea.")
     
     if(producto1 == "Termo"){
-        if(stockProductoA >= cantidad1){
-            precio(cantidad1, precioProductoA)
-            alert("El precio al que te queda es $" + (cantidad1 * precioProductoA))
+        if(productoA.stock >= cantidad1){
+            precioFinal += precio(cantidad1, productoA.precio)
+            alert("El precio al que te queda es $" + (cantidad1 * productoA.precio));
         }
         else{
-            alert("No tememos esa cantidad en este momento. Lo sentimos!")
+            alert("No tememos esa cantidad en este momento. Lo sentimos!");
         }
     }
-    else if(producto1 == "Almhoada"){
-        if(stockProductoB >= cantidad1){
-            precio(cantidad1, precioProductoB)     
-            alert("El precio al que te queda es $" + (cantidad1 * precioProductoB))
+    else if(producto1 == "Almohada"){
+        if(productoB.stock >= cantidad1){
+            precioFinal += precio(cantidad1, productoB.precio)     
+            alert("El precio al que te queda es $" + (cantidad1 * productoB.precio));
         }
         else{
-            alert("No tenemos esa cantidad en en este momento. Lo sentimos!")
+            alert("No tenemos esa cantidad en en este momento. Lo sentimos!");
         }
     }
     else if(producto1 == "Tapers"){
-        if(stockProductoC >= cantidad1){
-            precio(cantidad1, precioProductoC)
-            alert("El precio al que te queda es $" + (cantidad1 * precioProductoC))
+        if(productoC.stock >= cantidad1){
+            precioFinal += precio(cantidad1, productoC.precio)
+            alert("El precio al que te queda es $" + (cantidad1 * productoC.precio));
         }
         else{
-            alert("No tenemos esa cantidad en este momento. Lo sentimos!")
+            alert("No tenemos esa cantidad en este momento. Lo sentimos!");
         }
     }
     else{
-        break;
+        alert("No tenemos ese producto en nuestra tienda. Lo sentimos!");
     }
+    compras = parseInt(prompt("Desea seguir comprando? \n1 .- Si \n2 .- No"));
 }
 
 function precio (cantidad, valor){
-    precioFinal += cantidad * valor
+    return cantidad * valor
 }
 
-let productos = [nombreProductoA, nombreProductoB, nombreProductoC];
+let productos = [productoA.nombre, productoB.nombre, productoC.nombre];
 
-productos.push(nombreProductoD, nombreProductoE);
+productos.push(productoD.nombre, productoE.nombre);
 
-let agregarProductos = [nombreProductoF, nombreProductoG];
+let agregarProductos = [productoF.nombre, productoG.nombre];
 
 const listadoProductos = productos.concat(agregarProductos);
 
 console.log(listadoProductos);
+
+const precios = [150, 300, 250, 500, 300, 1000, 900];
+function buscar (elemento){
+    return elemento >= 600
+}
+console.log(precios.find(buscar))
+
+
 
 
 
